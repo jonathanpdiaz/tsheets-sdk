@@ -3,6 +3,7 @@ export const defaultStartDate = '2014-01-01' // end is today by default
 export const tokenVarName = 'TSHEETS_TOKEN'
 export const groupsEndpoint = 'groups'
 export const jobcodesEndpoint = 'jobcodes'
+export const jobcodeAssignmentsEndpoint = 'jobcode_assignments';
 export const usersEndpoint = 'users'
 export const timesheetsEndpoint = 'timesheets'
 
@@ -20,6 +21,7 @@ export default {
   tokenVarName,
   groupsEndpoint,
   jobcodesEndpoint,
+  jobcodeAssignmentsEndpoint,
   usersEndpoint,
   timesheetsEndpoint
 }

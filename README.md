@@ -143,7 +143,30 @@ jobcodes().get()
 |------------|--------------------------------------------------|----------|----------|
 | start_date | `YYYY-MM-DD` for the starting date.              | string   | Yes      |
 | end_date   | `YYYY-MM-DD` for the end date.                   | string   | Yes      |
-| user_ids   | Array of TSheets user IDs to get jobcodes for. | number[] | No       |
+| page       | Page number for jobcodes (max 50 per page).    | number   | No       |
+
+### Jobcodes Assignments
+
+#### `jobcodesAssignments.get(params)`
+
+Retrieves a list of all jobcode assignments associated with users, with optional filters to narrow down the results. 
+
+**Example**
+
+```js
+import { reports } from 'tsheets-sdk'
+jobcodesAssignments().get()
+  .then(report => console.log('jobcodes:', jobcodes))
+  .catch(error => console.error('error getting jobcodes:', error))
+```
+
+**Params**
+
+| Parameter  | Description                                      | Type     | Required |
+|------------|--------------------------------------------------|----------|----------|
+| start_date | `YYYY-MM-DD` for the starting date.              | string   | Yes      |
+| end_date   | `YYYY-MM-DD` for the end date.                   | string   | Yes      |
+| user_ids   | Array of TSheets user IDs to get users for. | number[] | No       |
 | page       | Page number for jobcodes (max 50 per page).    | number   | No       |
 
 ### Users
